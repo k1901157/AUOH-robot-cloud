@@ -1,4 +1,4 @@
-const mqtt_client = mqtt.connect('wss://osama-robot.herokuapp.com/');
+const mqtt_client = mqtt.connect('wss://osama-robot.herokuapp.com');
 mqtt_client.on('connect', () => {
     console.log('connected to mqtt broker');
     mqtt_client.subscribe('joints')
